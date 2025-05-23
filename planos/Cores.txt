@@ -1,0 +1,18 @@
+Cores 
+
+amarelo?
+
+root{
+ 
+azul bb #9AD9FF
+
+<color name='Ilustração-1' rgb='233ED9' r='35' g='62' b='217' />
+<color name='Ilustração-2' rgb='5086F2' r='80' g='134' b='242' />
+<color name='Ilustração-3' rgb='8DAEF2' r='141' g='174' b='242' />
+<color name='Ilustração-4' rgb='B3C8F2' r='179' g='200' b='242' />
+<color name='Ilustração-5' rgb='F2CD5E' r='242' g='205' b='94' />
+
+
+
+
+}
