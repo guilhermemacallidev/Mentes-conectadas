@@ -20,7 +20,10 @@ body{
     padding: 20px;
     
 }
-
+.inicio h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
 .inicio h1 {
   overflow: hidden;
   white-space: nowrap;
@@ -37,5 +40,6 @@ body{
 @keyframes blink {
   50% { border-color: transparent; }
 }
+
 
   
