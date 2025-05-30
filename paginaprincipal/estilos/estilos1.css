@@ -1,6 +1,7 @@
 @charset  "UTF-8";
 /** essa á pagina onde o projeto é explicado **/
 
+
 :root {
   --cor1: #9AD9FF;
   --cor2: #233ED9;
@@ -20,26 +21,8 @@ body{
     padding: 20px;
     
 }
-.inicio h1 {
-    text-align: center;
-    font-size: 2.5em;
-}
-.inicio h1 {
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid  black;
-  width: 0;
-  animation: typing 3s steps(38, end) forwards, blink 0.7s step-end infinite;
-}
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 38ch; }  /* 38 caracteres, ajuste conforme o texto */
-}
 
-@keyframes blink {
-  50% { border-color: transparent; }
-}
 
 
   
