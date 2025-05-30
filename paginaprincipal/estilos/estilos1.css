@@ -1,17 +1,25 @@
-Cores 
+@charset  "UTF-8";
+/** essa á pagina onde o projeto é explicado **/
 
+:root {
+  --cor1: #9AD9FF;
+  --cor2: #233ED9;
+  --cor3: #5086F2;
+  --cor4: #8DAEF2;
+  --cor5: #B3C8F2;
+  --cor6: #fbd769;
+}
 
+body{
+    margin: 0px;
+}
 
-
- 
- #9AD9FF
-#233ED9
- #5086F2 
- #8DAEF2 
- #B3C8F2 
- #F2CD5E 
-
-gpem
+.inicio {
+    background-color: var(--cor6);
+    margin: 0px;
+    padding: 20px;
+    
+}
 
 .inicio h1 {
   overflow: hidden;
@@ -30,4 +38,4 @@ gpem
   50% { border-color: transparent; }
 }
 
-
+  
