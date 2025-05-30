@@ -1,6 +1,0 @@
-ordem de paginas para criar
-
-        1-front end da pagina de login
-2- pagina principal do projeto
-    2.1 que elementos usar ?
-     2.1 parte1d do site- explicar o projeto
