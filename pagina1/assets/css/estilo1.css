@@ -1,24 +1,127 @@
 @charset "UTF-8";
- @import url(fontes.css);
+@import url("fontes.css");
 
 :root {
     --fonte-grande: 'Amatic SC', sans-serif;
     --fonte-pequena: 'Crimson Text', serif;
+    --cor1: rgb(255, 234, 134);
+    --cor2: rgb(80, 70, 123);
+    --cor3: rgb(237, 212, 99);
 }
 
-:root{
-    
-     --cor1: rgb(255, 234, 134);
-     --cor2: rgb(80, 70, 123);
-     --cor3: rgb(237, 212, 99);
-
+header {
+    background-color: var(--cor3);
+    padding: 1.5rem 0 0.5rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-.cabeça{
+header .cabeca {
     font-family: var(--fonte-grande);
     font-size: 2.5rem;
-    color: var(--cor2); 
-    text-align: center;
-    background-color: var(--cor3);
+    color: var(--cor2);
+    background: none;
+    margin-bottom: 0;
+    padding: 0;
+}
 
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--cor1);
+    padding: 1rem 0;
+    font-family: var(--fonte-grande);
+    font-size: 1.5rem;
+}
+
+.nav-menu a {
+    color: var(--cor2);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+    color: var(--cor3);
+}
+
+.sobre, .equipe, .explicacao, .material-apoio, .contato {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1.5rem;
+    background: #fffbe6;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(80,70,123,0.05);
+    font-family: var(--fonte-pequena);
+}
+
+.imagensequipe {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.imagensequipe img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: var(--cor1);
+    border: 2px solid var(--cor2);
+}
+
+.instagram {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.instagram img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s;
+}
+
+.instagram img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+    background: var(--cor2);
+    color: #fff;
+    font-family: var(--fonte-pequena);
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
+.hidden-section {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+.show-from-bottom {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .imagensequipe {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre, .equipe, .explicacao, .material-apoio, .contato {
+        padding: 1rem;
+    }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br"
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,84 +7,100 @@
     <link rel="stylesheet" href="assets/css/clash-grotesk.css">
     <link rel="stylesheet" href="assets/css/estilo1.css">
     <link rel="shortcut icon" href="assets/img/mind-640w_1.ico" type="image/x-icon">
+    <style>
+        /* Estilos para o efeito de animação */
+        .hidden-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .show-from-bottom {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
-    <!--menu de navegação-->
-      <nav class="nav-menu">
-                    <a href="#sobre">SOBRE</a>
-                    <a href="#Planos">EQUIPE</a>
-                    <a href="#contato">CONTATO</a>
-                </nav>
+    <header>
+        <nav class="nav-menu">
+            <a href="#sobre">SOBRE</a>
+            <a href="#equipe">EQUIPE</a>
+            <a href="#contato">CONTATO</a>
+        </nav>
+        <section class="cabeca">
+            <h1>Bem-vindo ao projeto Mentes Conectadas</h1>
+        </section>
+    </header>
     <main>
-       
-        <section class="cabeça">
-            <h1> Bem vindo ao projeto Mentes Conectadas</h1>
+        <section class="sobre" id="sobre">
+            <h2>O que é nosso projeto?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur aliquid numquam? Cum voluptatibus maiores neque, esse nobis unde dolor earum. Quia, facilis facere veritatis obcaecati impedit aut placeat libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur aliquid numquam? Cum voluptatibus maiores neque, esse nobis unde dolor earum. Quia, facilis facere veritatis obcaecati impedit aut placeat libero?</p>
         </section>
 
-        <section class="sobre">
-         <h2> O que é nosso projeto?</h2>
-         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur aliquid numquam? Cum
-             voluptatibus maiores neque, esse nobis
-             unde dolor earum. Quia, facilis facere veritatis obcaecati impedit aut 
-             placeat libero ? orem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur aliquid numquam? Cum
-             voluptatibus maiores neque, esse nobis
-             unde dolor earum. Quia, facilis facere veritatis obcaecati impedit aut 
-             placeat libero ?</p>
-        </section>
-
-         <section class="equipe">
-            <h2> Nossa equipe</h2>
+        <section class="equipe" id="equipe">
+            <h2>Nossa equipe</h2>
             <div class="imagensequipe">
-                <img src="" alt="">
-                <img src="" alt="">  
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="" alt="Membro da equipe 1">
+                <img src="" alt="Membro da equipe 2">
+                <img src="" alt="Membro da equipe 3">
+                <img src="" alt="Membro da equipe 4">
             </div>
-         </section>
+        </section>
 
-         <!--ver como vou fazer ssa parte se vai ser um conteudo so ou varias divs-->
-         <section class="explicacao">
-            <h2> O que vamos realizar no projeto?</h2>
-           <P> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam
-             mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil
-             deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestiae.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam
-             mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil
-             deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestiae.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam
-             mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil
-             deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestia </P>
-             <h4>  SECTION </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam
-             mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil
-             deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestiae.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam
-             mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil
-             deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestiae.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam
-             mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil
-             deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestia </p>
-         </section>
+        <section class="explicacao">
+            <h2>O que vamos realizar no projeto?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestiae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestiae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestia.</p>
+            <h4>SECTION</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestiae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestiae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corrupti ratione quam mollitia quo, nobis officia voluptas blanditiis sint dicta ducimus hic nihil deserunt. Aspernatur aliquam quisquam temporibus! Alias, molestia.</p>
+        </section>
 
-         <section>
-            <h2> como acessar nosso material de apoio?</h2>
-            <p> pode acessar o nosso material de apoio atraves das nossas outras paginas
-                <a href=""> clicando aqui </a> e escolhendo o tipo de material que quer acessar </p>
-         </section>
+        <section class="material-apoio">
+            <h2>Como acessar nosso material de apoio?</h2>
+            <p>Pode acessar o nosso material de apoio através das nossas outras páginas <a href="">clicando aqui</a> e escolhendo o tipo de material que quer acessar.</p>
+        </section>
 
-         <section class="contato">
-            <h2> Como entrar em contato conosco?</h2>
-            <p> Você pode entrar em contato conosco atraves do instagram feito pela esquipe do projeto basta clicar no icone abaixo</p>
-            <!--colocar um .ico do isntagram junto ao link -->
+        <section class="contato" id="contato">
+            <h2>Como entrar em contato conosco?</h2>
+            <p>Você pode entrar em contato conosco através do Instagram feito pela equipe do projeto. Basta clicar no ícone abaixo:</p>
             <div class="instagram">
-            <a href=""> <img src="assets/img/instagram_icon_32x32.png" alt=""></a>
-         </section>
+                <a href=""><img src="assets/img/instagram_icon_32x32.png" alt="Instagram"></a>
+            </div>
+        </section>
     </main>
- <footer> 
-    <p>&copy; Projeto Mentes Conectadas - 2025</p>
-    <p> Desenvolvido por <a href="https://github.com/guilhermemacallidev"> Guilherme Macalli</a></p>
-    <p> Contato: [Seu Email]</p>
- </footer>
+    <footer>
+        <p>&copy; Projeto Mentes Conectadas - 2025</p>
+        <p>Desenvolvido por <a href="https://github.com/guilhermemacallidev">Guilherme Macalli</a></p>
+        <p>Contato: [Seu Email]</p>
+    </footer>
+    <script>
+        // Suaviza o scroll ao clicar nos links do menu
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href').substring(1);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Efeito de animação para as seções ao rolar para cima
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-from-bottom');
+                } else {
+                    entry.target.classList.remove('show-from-bottom');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('main > section').forEach(section => {
+            section.classList.add('hidden-section');
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
