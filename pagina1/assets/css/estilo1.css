@@ -4,7 +4,7 @@
 :root {
     --fonte-grande: 'popins', sans-serif;
     --fonte-pequena: 'Montserrat', sans-serif;
-    --cor1: #ffea86;
+    --cor1: #f8e588;
     --cor2: rgba(0, 0, 0, 0.81) ;
     --cor3: #a3cef1;
 }
@@ -76,17 +76,38 @@ nav a {
 }
 
 
+.sobre {
+    min-height: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    padding: 3.5rem 2rem 2rem 2rem; /* Espaço no topo para o título */
+    margin: 0;
+    background-color: var(--cor1);
+}
 
-.sobre, .equipe, .explicacao, .material-apoio, .contato {
-    margin: 2rem auto;
-    max-width: 800px;
-    padding: 1.5rem;
-    background: #fffbe6;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(80,70,123,0.05);
+.sobre h2 {
+    align-self: flex-start;
+    text-align: left;
+    margin: 0 0 1.5rem 0;
+    font-size: 3.0rem;
+    font-family: var(--fonte-grande);
+}
+
+.sobre p {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.0rem;
+    line-height: 1.6;
     font-family: var(--fonte-pequena);
 }
 
+        /* Animação do fundo da seção sobre */
+  .sobre-bg-animada {
+      background: var(--cor1);
+      transition: background 1s cubic-bezier(.4,0,.2,1);
+}
 .imagensequipe {
     display: flex;
     justify-content: center;
@@ -169,7 +190,7 @@ footer a {
 
 .nav-menu a:hover {
     color: var(--cor1);
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     box-shadow: 0 4px 12px rgba(80,70,123,0.08);
 }
 

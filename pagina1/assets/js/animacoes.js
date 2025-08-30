@@ -67,3 +67,20 @@ document.addEventListener('DOMContentLoaded', () => {
     digitar();
 });
 
+// Animação do fundo da seção sobre ao rolar
+document.addEventListener('DOMContentLoaded', () => {
+    const sobreSection = document.querySelector('.sobre');
+    if (sobreSection) {
+        const sobreBgObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    sobreSection.classList.add('sobre-bg-animada');
+                } else {
+                    sobreSection.classList.remove('sobre-bg-animada');
+                }
+            });
+        }, { threshold: 0.1 });
+        sobreBgObserver.observe(sobreSection);
+    }
+});
+
