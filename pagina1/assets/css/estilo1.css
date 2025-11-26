@@ -3,14 +3,18 @@
 
 :root {
     --fonte-grande: 'popins', sans-serif;
-    --fonte-pequena: 'Montserrat', sans-serif;
-    --cor1: #f8e588;
-    --cor2: rgba(0, 0, 0, 0.81) ;
-    --cor3: #a3cef1;
+    --fonte-pequena: 'Lato', sans-serif;
+    --cor1: #D7F1FF;      /* Fundo suave */
+    --cor2: #16324A;      /* Neutro escuro para texto */
+    --cor3: #A3CEF1;      /* Azul header */
+    --cor4: #63AEE8;      /* Azul médio/acento */
+    --cor5: #82c7f5;      /* Azul profundo/contraste */
+    --cor-acento: #ffcd60;/* Coral suave/acento quente */
 }
 
 body{
     margin: 0;
+    background-color: black
 }
 
 header {
@@ -124,7 +128,7 @@ nav a {
     justify-content: flex-start; /* Alinha o conteúdo ao topo */
     padding: 3.5rem 2rem 2rem 2rem; /* Espaço no topo para o título */
     margin: 0;
-    background-color: #5aabf8;
+    background-color: var(--cor3);
 }
 .imagensequipe img {
     width: 100px;
@@ -135,18 +139,7 @@ nav a {
     border: 2px solid var(--cor2);
 }
 
-.explicacao{
-  min-height: 100vh;
-    height: 100vh;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Alinha o conteúdo ao topo */
-    padding: 3.5rem 2rem 2rem 2rem; /* Espaço no topo para o título */
-    margin: 0;
-background-color: #fa83f4;}
-
-.material-apoio{
+.explicacao {
     min-height: 100vh;
     height: 100vh;
     box-sizing: border-box;
@@ -155,7 +148,21 @@ background-color: #fa83f4;}
     justify-content: flex-start; /* Alinha o conteúdo ao topo */
     padding: 3.5rem 2rem 2rem 2rem; /* Espaço no topo para o título */
     margin: 0;
-    background-color: peachpuff;
+    background-color: #ffe066; /* Amarelo médio, mais escuro e vibrante */
+    color: #3a2c00; /* Marrom escuro para contraste e harmonia */
+}
+
+.material-apoio {
+    min-height: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    padding: 3.5rem 2rem 2rem 2rem; /* Espaço no topo para o título */
+    margin: 0;
+    background-color: #ffd23f; /* Amarelo escuro, forte e alegre */
+    color: #3a2c00; /* Marrom escuro para contraste e harmonia */
 }
     
 
