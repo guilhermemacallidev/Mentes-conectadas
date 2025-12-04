@@ -14,7 +14,7 @@
 
 body{
     margin: 0;
-    background-color: black
+    background-color: white;
 }
 
 header {
@@ -90,7 +90,10 @@ nav a {
     padding: 3.5rem 2rem 2rem 2rem; /* Espaço no topo para o título */
     margin: 0;
     background-color: var(--cor1);
-}
+    font-family: poppins, sans-serif;
+    font-size: 22px;
+    background: #BEE8FF !important; /* baby blue */
+} 
 
 .sobre h2 {
     align-self: flex-start;
@@ -105,6 +108,7 @@ nav a {
     font-size: 1.0rem;
     line-height: 1.6;
     font-family: var(--fonte-pequena);
+    font-size: 22px;
 }
 
         /* Animação do fundo da seção sobre */
@@ -150,6 +154,8 @@ nav a {
     margin: 0;
     background-color: #ffe066; /* Amarelo médio, mais escuro e vibrante */
     color: #3a2c00; /* Marrom escuro para contraste e harmonia */
+    font-family: poppins, sans-serif;
+    font-size: 22px;
 }
 
 .material-apoio {
@@ -161,10 +167,15 @@ nav a {
     justify-content: flex-start; /* Alinha o conteúdo ao topo */
     padding: 3.5rem 2rem 2rem 2rem; /* Espaço no topo para o título */
     margin: 0;
-    background-color: #ffd23f; /* Amarelo escuro, forte e alegre */
-    color: #3a2c00; /* Marrom escuro para contraste e harmonia */
+    background-color: var(--cor2); /* Amarelo escuro, forte e alegre */
+    color: white;
+    font-family: var(--fonte-pequena);
+    font-size: 19px;
 }
-    
+.section-inner.p{
+    color: white;
+}
+
 
 .instagram {
     display: flex;
@@ -287,6 +298,70 @@ footer a {
     .sobre, .equipe, .explicacao, .material-apoio, .contato {
         padding: 1rem;
     }
+}
+
+/* Container central comum para todas as seções */
+.section-inner {
+  max-width: 1200px;        /* deixa o bloco de texto mais largo na horizontal */
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Evita que parágrafos fiquem com largura total e desalinhados */
+.section-inner p {
+  max-width: 100%;
+  line-height: 1.6;
+  color: var(--cor2);
+}
+
+/* Centraliza o botão horizontalmente dentro da seção */
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+
+/* Garante que o botão fique no centro (sobrepõe previous margin) */
+.btn-apoio {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 1.1rem;
+  background: linear-gradient(90deg, var(--cor4), var(--cor5));
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(99,174,232,0.18);
+  text-decoration: none;
+}
+
+/* Responsividade: reduz larguras em telas pequenas */
+@media (max-width: 900px) {
+  .section-inner { max-width: 900px; }
+  .sobre h2, .explicacao h2 { font-size: 2.1rem; }
+  .sobre p, .explicacao p { font-size: 1rem; line-height:1.7; max-width:70ch; }
+}
+
+@media (max-width: 600px) {
+  .section-inner { padding: 0 0.8rem; }
+  .btn-apoio { padding: 0.6rem 0.9rem; font-size: 0.95rem; }
+}
+
+/* Diminui e centra a imagem dentro da seção .sobre */
+.sobre > img {
+  width: 120px;      /* tamanho reduzido — ajuste se quiser maior/menor */
+  height: auto;
+  display: block;
+  margin: 1.25rem auto 0; /* espaço acima e centraliza horizontalmente */
+  border-radius: 8px;     /* opcional: cantos arredondados */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* responsivo: mantém proporcional em telas pequenas */
+@media (max-width: 600px) {
+  .sobre > img { width: 90px; margin-top: 1rem; }
 }
 
 main {
