@@ -86,14 +86,15 @@ nav a {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinha o conteúdo ao topo */
-    padding: 3.5rem 2rem 2rem 2rem; /* Espaço no topo para o título */
+    justify-content: flex-start;
+    padding: 3.5rem 2rem 2rem 2rem;
     margin: 0;
     background-color: var(--cor1);
     font-family: poppins, sans-serif;
     font-size: 22px;
-    background: #BEE8FF !important; /* baby blue */
-} 
+    background: #BEE8FF !important;
+    color: var(--cor2);
+}
 
 .sobre h2 {
     align-self: flex-start;
@@ -101,6 +102,7 @@ nav a {
     margin: 0 0 1.5rem 0;
     font-size: 3.0rem;
     font-family: var(--fonte-grande);
+    color: var(--cor2);
 }
 
 .sobre p {
@@ -108,7 +110,8 @@ nav a {
     font-size: 1.0rem;
     line-height: 1.6;
     font-family: var(--fonte-pequena);
-    font-size: 22px;
+    font-size: 17px;
+    color: var(--cor2);
 }
 
         /* Animação do fundo da seção sobre */
@@ -119,28 +122,49 @@ nav a {
 .imagensequipe {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.imagensequipe img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center 15%;
+    border-radius: 50%;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+    display: block;
+}
+
+/* responsivo */
+@media (max-width: 600px) {
+    .imagensequipe {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imagensequipe img { 
+        width: 120px; 
+        height: 120px;
+    }
 }
 
 .equipe{
-     min-height: 100vh;
+    min-height: 100vh;
     height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinha o conteúdo ao topo */
-    padding: 3.5rem 2rem 2rem 2rem; /* Espaço no topo para o título */
+    justify-content: flex-start;
+    padding: 3.5rem 2rem 2rem 2rem;
     margin: 0;
     background-color: var(--cor3);
+    color: var(--cor2);
 }
-.imagensequipe img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    background: var(--cor1);
-    border: 2px solid var(--cor2);
+
+.equipe h2,
+.equipe p {
+    color: var(--cor2);
 }
 
 .explicacao {
@@ -149,13 +173,18 @@ nav a {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinha o conteúdo ao topo */
-    padding: 3.5rem 2rem 2rem 2rem; /* Espaço no topo para o título */
+    justify-content: flex-start;
+    padding: 3.5rem 2rem 2rem 2rem;
     margin: 0;
-    background-color: #ffe066; /* Amarelo médio, mais escuro e vibrante */
-    color: #3a2c00; /* Marrom escuro para contraste e harmonia */
+    background-color: #5B9FD4;
+    color: var(--cor2);
     font-family: poppins, sans-serif;
-    font-size: 22px;
+    font-size: 17px;
+}
+
+.explicacao h2,
+.explicacao p {
+    color: var(--cor2);
 }
 
 .material-apoio {
@@ -164,14 +193,20 @@ nav a {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinha o conteúdo ao topo */
-    padding: 3.5rem 2rem 2rem 2rem; /* Espaço no topo para o título */
+    justify-content: flex-start;
+    padding: 3.5rem 2rem 2rem 2rem;
     margin: 0;
-    background-color: var(--cor2); /* Amarelo escuro, forte e alegre */
-    color: white;
+    background-color: var(--cor2);
+    color: var(--cor2);
     font-family: var(--fonte-pequena);
     font-size: 19px;
 }
+
+.material-apoio h2,
+.material-apoio p {
+    color: #fff;
+}
+
 .section-inner.p{
     color: white;
 }
@@ -180,31 +215,60 @@ nav a {
 .instagram {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin: 1.5rem 0;
+    gap: 1rem;
 }
 
 .instagram img {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     transition: transform 0.2s;
+    cursor: pointer;
 }
 
 .instagram img:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 footer {
     text-align: center;
-    padding: 1.5rem 0 1rem 0;
+    padding: 1.5rem 2rem;
     background: var(--cor2);
     color: #fff;
     font-family: var(--fonte-pequena);
-    margin-top: 2rem;
+    margin-top: 0;
+}
+
+footer h2 {
+    font-family: var(--fonte-grande);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 14px;
 }
 
 footer a {
     color: var(--cor1);
     text-decoration: underline;
+    transition: opacity 0.2s;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 1rem;
+    }
+    
+    footer p {
+        font-size: 13px;
+    }
 }
 
 .hidden-section {
@@ -324,29 +388,61 @@ footer a {
   margin-top: 1.8rem;
 }
 
-/* Garante que o botão fique no centro (sobrepõe previous margin) */
+/* botão maior — mantém estilo anterior (gradient) */
 .btn-apoio {
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
-  padding: 0.75rem 1.1rem;
-  background: linear-gradient(90deg, var(--cor4), var(--cor5));
+  gap: 0.9rem;
+  padding: 1rem 1.6rem;         /* mais alto e largo */
+  min-width: 260px;            /* garante presença visual maior */
+  background: linear-gradient(90deg, var(--cor4), var(--cor5)); /* mantém gradient */
   color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(99,174,232,0.18);
+  border-radius: 14px;
+  box-shadow: 0 14px 36px rgba(99,174,232,0.18);
   text-decoration: none;
+  border: none;
+  font-family: var(--fonte-grande);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  font-size: 1.15rem;          /* texto maior */
+  transition: transform 180ms cubic-bezier(.2,.9,.2,1), box-shadow 180ms ease;
+  cursor: pointer;
 }
 
-/* Responsividade: reduz larguras em telas pequenas */
-@media (max-width: 900px) {
-  .section-inner { max-width: 900px; }
-  .sobre h2, .explicacao h2 { font-size: 2.1rem; }
-  .sobre p, .explicacao p { font-size: 1rem; line-height:1.7; max-width:70ch; }
+/* ícone maior dentro do botão */
+.btn-ico {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0.35rem;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.12);
 }
 
+/* texto do botão */
+.btn-text {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+/* hover suave preservado */
+.btn-apoio:hover,
+.btn-apoio:focus {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(99,174,232,0.20);
+  outline: none;
+}
+
+/* responsivo — reduz levemente o tamanho em telas pequenas */
 @media (max-width: 600px) {
-  .section-inner { padding: 0 0.8rem; }
-  .btn-apoio { padding: 0.6rem 0.9rem; font-size: 0.95rem; }
+  .btn-apoio {
+    padding: 0.75rem 1.1rem;
+    min-width: 200px;
+    font-size: 1rem;
+  }
+  .btn-ico { width: 36px; height: 36px; }
 }
 
 /* Diminui e centra a imagem dentro da seção .sobre */
@@ -366,4 +462,33 @@ footer a {
 
 main {
     margin-top: 0; /* Remova qualquer margem superior */
+}
+
+/* Animação de fade-in para textos grandes */
+.sobre h2,
+.equipe h2,
+.explicacao h2,
+.material-apoio h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.sobre p,
+.equipe p,
+.explicacao p {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.8s ease forwards 0.2s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

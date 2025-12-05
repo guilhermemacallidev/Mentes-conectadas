@@ -22,7 +22,7 @@ O site apresenta textos explicativos e reflexivos sobre:
 
 - **Ansiedade**  
 - **Depressão**  
-- **Pressão Familiar**  
+- **Pressão Familiar**  ta vendo as  tres capt
 - **Pressão Escolar**  
 - **Amor**  
 - **Saudade**

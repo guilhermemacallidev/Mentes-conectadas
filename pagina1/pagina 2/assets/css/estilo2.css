@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/* PALETA DO PROJETO */
+:root {
+    --cor1: #D7F1FF;
+    --cor2: #16324A;
+    --cor3: #A3CEF1;
+    --cor4: #63AEE8;
+    --cor5: #82c7f5;
+    --cor-acento: #ffcd60;
+
+    --fonte-grande: 'Poppins', sans-serif;
+    --fonte-pequena: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: var(--cor1);
+    font-family: var(--fonte-pequena);
+    color: var(--cor2);
+}
+
+/* ---------------- HEADER ---------------- */
+
+header {
+    text-align: center;
+    padding: 3.5rem 1rem 2.5rem;
+    background: linear-gradient(180deg, var(--cor3), #bfdff8);
+    box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+    border-bottom: 4px solid rgba(255,255,255,0.06);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-family: var(--fonte-grande);
+    letter-spacing: 1px;
+    color: var(--cor2);
+}
+
+header p {
+    font-size: 1.05rem;
+    margin: 1rem auto 1.6rem;
+    max-width: 720px;
+    color: rgba(22,50,74,0.95);
+}
+
+/* Botão de voltar mais destacado */
+.btn-voltar {
+    display: inline-block;
+    padding: 0.9rem 1.6rem;
+    background: linear-gradient(90deg, var(--cor4), var(--cor5));
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    box-shadow: 0 8px 22px rgba(99,174,232,0.18);
+    border: none;
+    cursor: pointer;
+}
+.btn-voltar:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(99,174,232,0.22); }
+
+/* ---------------- CONTEÚDO ---------------- */
+
+main {
+    padding: 2.5rem 1rem;
+}
+
+/* Área dos tópicos */
+.acordeao-container {
+    max-width: 1000px;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+/* Cada item do acordeão */
+.acordeao-item {
+    margin-bottom: 1.2rem;
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #e7f2fb;
+    box-shadow: 0 6px 18px rgba(17,40,60,0.04);
+    transition: transform 0.2s ease;
+}
+
+.acordeao-item:hover {
+    transform: scale(1.01);
+}
+
+/* Cabeçalho do item */
+.acordeao-titulo {
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    background: linear-gradient(90deg, var(--cor4), var(--cor5));
+    color: #fff;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    text-align: left;
+    font-family: var(--fonte-grande);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.acordeao-titulo:hover {
+    background: var(--cor5);
+    padding-left: 2rem;
+}
+
+/* Conteúdo interno */
+.acordeao-conteudo {
+    padding: 1rem 1.6rem 1.6rem;
+    display: none;
+    animation: slideDown 0.35s ease forwards;
+    color: var(--cor2);
+}
+
+.acordeao-conteudo p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+}
+
+/* ---------------- VÍDEOS ---------------- */
+
+.video-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.video-container iframe {
+    flex: 1 1 280px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    min-height: 220px;
+}
+
+/* ---------------- PODCAST ---------------- */
+
+audio {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* ---------------- ANIMAÇÃO ---------------- */
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    text-align: center;
+    padding: 1rem 1.5rem;
+    background: var(--cor2);
+    color: #fff;
+    font-family: var(--fonte-pequena);
+    margin-top: 1.5rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 13px;
+}
+
+footer a {
+    color: var(--cor1);
+    text-decoration: underline;
+    transition: opacity 0.2s;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 1rem;
+    }
+    
+    footer p {
+        font-size: 13px;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .acordeao-titulo {
+        font-size: 1.1rem;
+    }
+
+    .btn-voltar {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+}
